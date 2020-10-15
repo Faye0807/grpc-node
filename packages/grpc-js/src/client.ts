@@ -143,6 +143,7 @@ export class Client {
         options
       );
     } else {
+      // 建立连接主逻辑
       this[CHANNEL_SYMBOL] = new ChannelImplementation(
         address,
         credentials,

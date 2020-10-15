@@ -162,7 +162,7 @@ export interface ProxyConnectionResult {
   socket?: Socket;
   realTarget?: GrpcUri;
 }
-
+// 建立连接
 export function getProxiedConnection(
   address: SubchannelAddress,
   channelOptions: ChannelOptions,

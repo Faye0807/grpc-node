@@ -237,6 +237,7 @@ export class ChannelImplementation implements Channel {
         );
       },
     };
+    // 负载均衡？
     this.resolvingLoadBalancer = new ResolvingLoadBalancer(
       this.target,
       channelControlHelper,
